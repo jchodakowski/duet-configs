@@ -6,7 +6,6 @@ M550 PRailCore							; Machine name and Netbios name (can be anything you like)
 ;M551 Pletmein                        	; Machine password (used for HTTP/FTP)
 M540 P0xBE:0xEF:0xDE:0xAD:0xFE:0x03 	; MAC Address
 M552 S1									; Enable WiFi
-;M587 S"64C57B-2.4" P"CP19202652KH"
 M586 P0 S1 								; Enable HTTP
 M586 P1 S0 								; Disable FTP
 M586 P2 S0 								; Disable Telnet
@@ -43,7 +42,7 @@ M208 X290 Y290 Z250	                	; set axis maxima and high homing switch po
 M208 X0 Y0 Z-0.5 S1                 	; set axis minima and low homing switch positions
 ;M92 X200 Y200 Z1600 E398		    	; steps/mm, X/Y may be more around 201.5 for accuracy
 ; old m92 for e: 398
-M92 X200 Y200 Z1600 E409				; 
+M92 X200 Y200 Z1600 E409				;
 M84 S30									; Set idle timeout
 M572 D0 S0.001							; Pressure advance
 M207 S0.75 R-0.000 F3200 T3200 Z0.0	; Firmware Retraction
